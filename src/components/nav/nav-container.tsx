@@ -103,7 +103,11 @@ const NavComponents = () => {
               }}
               tabIndex={1}
             >
-              <BurgerMenuIcon stroke={"#b1b1b1"} height={40} width={40} />{" "}
+              <BurgerMenuIcon
+                className={`${isMobileMenuVisible ? "stroke-black" : "stroke-white"}`}
+                height={45}
+                width={45}
+              />{" "}
             </button>
           </div>
           <div
