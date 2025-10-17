@@ -1,3 +1,4 @@
+import { ExternalLink } from "~/components/nav/text-link";
 import { ContentSection } from "~/components/ui/content-section";
 import { ResponsiveImage } from "~/components/ui/responsive-image";
 
@@ -19,11 +20,7 @@ export default function Boeken() {
                 <i className="text-sm">(UITVERKOCHT)</i>
               </b>
             </h3>
-            <p>
-              Is nu via deze site voor € 12,50 verkrijgbaar. Tot 1 januari 2021
-              zonder verzendkosten.
-            </p>
-            <p>
+            {/* <p>
               Maak € 12,50 over op NL46 INGB 0001 7640 10 ten name van R.
               Brilleman te Amsterdam, onder vermelding &quot;102 Mythen&quot;
             </p>
@@ -31,7 +28,7 @@ export default function Boeken() {
               Tevens stuurt u een e-mail met uw naam en postadres naar dit
               e-mail adres. Het boek wordt u dan zo spoedig mogelijk
               toegestuurd.
-            </p>
+            </p> */}
           </div>
         </div>
         <div className="relative my-2 flex h-fit flex-col items-center gap-8 overflow-hidden border-t border-amber-950 pt-8 lg:flex-row lg:items-start">
@@ -46,6 +43,13 @@ export default function Boeken() {
               <b>Islay, Whisky-eiland vol geschiedenis</b>{" "}
             </h3>
             <p>
+              Dit boek is nog te verkrijgen via{" "}
+              <ExternalLink
+                href="https://www.whiskyboeken.nl/"
+                title="whiskyboeken.nl"
+              />
+            </p>
+            {/* <p>
               &quot;Islay, Whisky-eiland vol geschiedenis&quot; is te bestellen
               door 14,00 Euro (+ 5 euro verzendkosten) over te maken op rekening
               NL46 INGB 0001 7640 10 ten name van R. Brilleman te Amsterdam,
@@ -54,7 +58,7 @@ export default function Boeken() {
             <p>
               Tevens stuurt u een e-mail met uw naam en postadres naar dit
               e-mail adres Het boek wordt u dan zo spoedig mogelijk toegestuurd.
-            </p>
+            </p> */}
           </div>
         </div>
         <div className="flex flex-col gap-6">
@@ -79,14 +83,6 @@ export default function Boeken() {
             heeft 221 pagina&apos;s en 185 kleurenfoto&apos;s. Het ISBN/EAN
             nummer is : 978-90-813054-2-6 / 9789081305426
           </p>
-          <p>
-            &quot;Islay, Whisky-eiland vol geschiedenis&quot; is te bestellen
-            door 28,00 Euro (nu tijdelijk zonder verzendkosten) over te maken op
-            rekening NL46 INGB 0001 7640 10 te name van R. Brilleman te
-            Amsterdam, onder vermelding van &quot;Islay whisky-eiland&quot;.
-            Tevens stuurt u een e-mail met uw naam en postadres naar dit e-mail
-            adres. Het boek wordt u dan zo spoedig mogelijk toegestuurd.
-          </p>
         </div>
         <div className="relative my-2 flex h-fit flex-col items-center gap-8 overflow-hidden border-t border-amber-950 pt-8 lg:flex-row lg:items-start">
           <ResponsiveImage
@@ -100,6 +96,13 @@ export default function Boeken() {
               <b>De chemie van Schotse maltwhisky</b>{" "}
             </h3>
             <p>
+              Dit boek is nog te verkrijgen via{" "}
+              <ExternalLink
+                href="https://www.whiskyboeken.nl/"
+                title="whiskyboeken.nl"
+              />
+            </p>
+            {/* <p>
               &quot;De chemie van Schotse maltwhisky&quot; (Derde druk) is te
               bestellen door 29,50 Euro (+ 5 euro verzendkosten) over te maken
               op NL46 INGB 0001 7640 10 ten name van R. Brilleman te Amsterdam,
@@ -108,7 +111,7 @@ export default function Boeken() {
             <p>
               Tevens stuurt u een e-mail met uw naam en postadres naar dit
               e-mail adres Het boek wordt u dan zo spoedig mogelijk toegestuurd.
-            </p>
+            </p> */}
           </div>
         </div>
         <div className="flex flex-col gap-6">
@@ -149,10 +152,10 @@ export default function Boeken() {
             <h3 className="text-xl">
               <b>
                 De Gids - Schotse Malt Whisky - Alle distilleerderijen van
-                Schotland
+                Schotland <i className="text-sm">(UITVERKOCHT)</i>
               </b>{" "}
             </h3>
-            <p>
+            {/* <p>
               De Gids is via deze site te bestellen door 10,00 Euro (+ 5 euro
               verzendkosten) over te maken op rekening NL46 INGB 0001 7640 10
               ten name van R. Brilleman te Amsterdam, onder vermelding van
@@ -161,7 +164,7 @@ export default function Boeken() {
             <p>
               Tevens stuurt u een e-mail met uw naam en postadres naar dit
               e-mail adres Het boek wordt u dan zo spoedig mogelijk toegestuurd.
-            </p>
+            </p> */}
           </div>
         </div>
         <div className="flex flex-col gap-6 pb-8">

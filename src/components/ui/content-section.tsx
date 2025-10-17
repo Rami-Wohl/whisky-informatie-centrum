@@ -42,12 +42,15 @@ export const ContentSection = ({
       className={`relative flex w-full flex-col items-center overflow-y-scroll bg-amber-950 bg-opacity-30 px-2 font-sans text-orange-950`}
     >
       <div
-        className={`my-16 flex w-full max-w-[1000px] flex-col items-center justify-center rounded-md bg-white bg-opacity-60 p-8 pt-0 font-sans text-orange-950 lg:p-8 lg:pt-0 ${size === "normal" ? "lg:w-1/2" : "lg:w-fit"}`}
+        className={`my-16 flex w-full max-w-[1000px] flex-col items-center justify-center rounded-md bg-white bg-opacity-60 p-8 pt-0 font-sans text-orange-950 lg:mt-24 lg:p-8 lg:pt-0 ${size === "normal" ? "lg:w-1/2" : "lg:w-fit"}`}
       >
         <WelcomeBanner />
         <h1 className="mb-8 text-2xl uppercase lg:text-3xl">{title}</h1>
         <div className="flex w-full flex-col gap-6">{children}</div>
       </div>
+      <span className="mb-8 rounded-full bg-white bg-opacity-20 px-4 py-2 font-sans text-white">
+        © Robin Brilleman {new Date().getFullYear()}
+      </span>
     </div>
   );
 };

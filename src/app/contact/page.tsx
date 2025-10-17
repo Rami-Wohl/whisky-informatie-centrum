@@ -17,7 +17,14 @@ export default function Contact() {
         <p>
           Per email, op het volgende adres:
           <br />
-          <b>robin@robinbrilleman.nl</b>
+          <b>
+            <a
+              href="mailto:robin@robinbrilleman.nl"
+              className="text-blue-600 underline"
+            >
+              robin@robinbrilleman.nl
+            </a>
+          </b>
         </p>
         <div className="my-2 flex flex-col gap-6 overflow-hidden lg:flex-row lg:gap-1">
           <ResponsiveImage
